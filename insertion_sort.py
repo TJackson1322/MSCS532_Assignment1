@@ -24,3 +24,15 @@ numbers = [12, 45, 8, 31, 20]
 print("Original list:", numbers)
 insertion_sort_decreasing(numbers)
 print("Decreasing order:", numbers)
+# Additional tests for Insertion Sort
+print("\nAdditional Tests")
+
+test_lists = [
+    [5, 5, 2, 8, 2],       # Duplicate numbers
+    [9, 7, 5, 3, 1],       # Already decreasing
+    [-3, 10, 0, -8, 5]     # Negative numbers
+]
+
+for test in test_lists:
+    print("Original:", test.copy())
+    print("Sorted:", insertion_sort_decreasing(test))
